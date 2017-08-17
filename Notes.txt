@@ -1,0 +1,28 @@
+Each login session saves user data
+
+$_SESSION[ 'username'] ='manny'
+$_SESSION[ 'user_id']= 1;
+
+Restrict access to the page with login
+
+User will come and add religion
+A. religion		- Pending status		-admin
+B. religion		- Pending status		-admin
+
+Public religion  all can see
+
+Protected religion - only user created the religion and can add the views
+
+active/ inactive
+
+Table
+Religion Name
+Religion Description
+
+Status: Pending = 0, Approved = 1, Blocked = -1
+
+Create Religion Page
+
+	Admin
+		All religions
+			Approve or disapprove
