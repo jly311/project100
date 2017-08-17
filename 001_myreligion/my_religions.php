@@ -59,7 +59,7 @@ if (isset($_GET['MM_UserId'])) {
   $colname_rsmy_religions = (get_magic_quotes_gpc()) ? $_GET['MM_UserId'] : addslashes($_GET['MM_UserId']);
 }
 mysql_select_db($database_conn, $conn);
-$query_rsmy_religions = sprintf("SELECT * FROM religions1 WHERE user_id = %s", $colname_rsmy_religions);
+$query_rsmy_religions = sprintf("SELECT * FROM religions WHERE user_id = %s", $colname_rsmy_religions);
 $query_limit_rsmy_religions = sprintf("%s LIMIT %d, %d", $query_rsmy_religions, $startRow_rsmy_religions, $maxRows_rsmy_religions);
 $rsmy_religions = mysql_query($query_limit_rsmy_religions, $conn) or die(mysql_error());
 $row_rsmy_religions = mysql_fetch_assoc($rsmy_religions);

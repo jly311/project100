@@ -1,6 +1,6 @@
 <?php require_once('../Connections/conn.php'); ?>
 <?php
-$colname_rsReligion = "-1";
+$colname_rsReligion = "1";
 if (isset($_GET['religion_id'])) {
   $colname_rsReligion = (get_magic_quotes_gpc()) ? $_GET['religion_id'] : addslashes($_GET['religion_id']);
 }

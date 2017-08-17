@@ -114,8 +114,8 @@ $queryString_rsReligions = sprintf("&totalRows_rsReligions=%d%s", $totalRows_rsR
         <td valign="top"><?php echo $row_rsReligions['religion_description']; ?></td>
         <td valign="top"><?php echo $row_rsReligions['religion_creation_dt']; ?></td>
         <td valign="top"><?php echo $row_rsReligions['religion_status']; ?></td>
-        <td valign="top"><a href="religions.php?changed_status=0&status=<?php echo $colname_rsReligions; ?>&religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Pending</a> | <a href="religions.php?changed_status=1&status=<?php echo $colname_rsReligions; ?>&religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Approved</a> | <a href="religions.php?changed_status=-1&status=<?php echo $colname_rsReligions; ?>&religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Blocked</a> | <a href="religions.php?changed_status=2&status=<?php echo $colname_rsReligions; ?>&religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Soft Delete</a></td>
-        <td valign="top"><a href="religions.php?delete_id=<?php echo $row_rsReligions['religion_id']; ?>&status=<?php echo $colname_rsReligions; ?>">Hard Delete</a></td>
+        <td valign="top"><a href="religions.php?changed_status=0&amp;status=<?php echo $colname_rsReligions; ?>&amp;religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Pending</a> | <a href="religions.php?changed_status=1&amp;status=<?php echo $colname_rsReligions; ?>&amp;religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Approved</a> | <a href="religions.php?changed_status=-1&amp;status=<?php echo $colname_rsReligions; ?>&amp;religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Blocked</a> | <a href="religions.php?changed_status=2&amp;status=<?php echo $colname_rsReligions; ?>&amp;religion_id=<?php echo $row_rsReligions['religion_id']; ?>">Soft Delete</a></td>
+        <td valign="top"><a href="religions.php?delete_id=<?php echo $row_rsReligions['religion_id']; ?>&amp;status=<?php echo $colname_rsReligions; ?>">Hard Delete</a></td>
       </tr>
       <?php } while ($row_rsReligions = mysql_fetch_assoc($rsReligions)); ?>
   </table>

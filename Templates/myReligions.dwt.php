@@ -6,8 +6,8 @@
 <title>Religions</title>
 <!-- TemplateEndEditable -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="../001_myreligiion/css/bootstrap.min.css">
-<link rel="stylesheet" href="../001_myreligiion/css/style.css">
+<link rel="stylesheet" href="../001_myreligion/css/bootstrap.min.css">
+<link rel="stylesheet" href="../001_myreligion/css/style.css">
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

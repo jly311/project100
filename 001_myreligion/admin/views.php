@@ -130,7 +130,7 @@ $queryString_rsViews = sprintf("&totalRows_rsViews=%d%s", $totalRows_rsViews, $q
 		
 		?></td>
       </tr>
-	  <td valign="top"><a href="views.php?changeStatus=0&view_id=<?php echo $row_rsViews['view_id']; ?>">Pending</a> | <a href="views.php?changeStatus=1&view_id=<?php echo $row_rsViews['view_id']; ?>">Approved</a> | <a href="views.php?changeStatus=2&view_id=<?php echo $row_rsViews['view_id']; ?>">Blocked</a> | <a href="views.php?changeStatus=3&view_id=<?php echo $row_rsViews['view_id']; ?>">Deleted</a> </td>
+	  <td valign="top"><a href="views.php?changeStatus=0&amp;view_id=<?php echo $row_rsViews['view_id']; ?>">Pending</a> | <a href="views.php?changeStatus=1&amp;view_id=<?php echo $row_rsViews['view_id']; ?>">Approved</a> | <a href="views.php?changeStatus=2&amp;view_id=<?php echo $row_rsViews['view_id']; ?>">Blocked</a> | <a href="views.php?changeStatus=3&amp;view_id=<?php echo $row_rsViews['view_id']; ?>">Deleted</a> </td>
       </tr>
       <?php } while ($row_rsViews = mysql_fetch_assoc($rsViews)); ?>
   </table>
